@@ -4,57 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Esportes e Saúde</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #007bff;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-    }
-    main {
-      padding: 2em;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
     <h1>Esportes e Saúde</h1>
+    <p>Beach Tennis, Jiu-Jitsu e os benefícios de uma vida ativa</p>
   </header>
 
+  <!-- Menu de navegação -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#beachtennis">Beach Tennis</a></li>
+      <li><a href="#jiujitsu">Jiu-Jitsu</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
   <main>
-    <section>
-      <h2>Por que Praticar Esportes?</h2>
-      <p>Praticar esportes é fundamental para a saúde física e mental. Esportes como o <strong>beach tennis</strong> e o <strong>jiu-jitsu</strong> trazem benefícios incríveis, como o aumento da resistência física, melhoria da coordenação motora e até alívio de estresse. Além disso, ajudam na manutenção de um corpo saudável e na prevenção de doenças.</p>
-    </section>
-    
-    <section>
-      <h2>Conheça o Beach Tennis</h2>
-      <p>O <strong>beach tennis</strong> é um esporte que mistura elementos do tênis tradicional com a diversão de jogar na praia. É um ótimo exercício para o corpo, pois trabalha músculos das pernas, braços e até o core. Além disso, jogar na areia proporciona uma experiência única de conexão com a natureza e alívio do estresse.</p>
+    <!-- Início -->
+    <section id="inicio">
+      <h2>A importância dos esportes para a saúde</h2>
+      <p>
+        Praticar esportes é uma das melhores formas de cuidar do corpo e da mente. Além de ajudar a manter o peso ideal e fortalecer os músculos, o exercício físico melhora a circulação, o humor e a qualidade de vida.
+        Atividades como o <strong>beach tennis</strong> e o <strong>jiu-jitsu</strong> são ótimos exemplos de esportes que unem diversão, técnica e benefícios físicos e mentais.
+      </p>
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1000&q=80" alt="Pessoas praticando esportes ao ar livre">
     </section>
 
-    <section>
-      <h2>Jiu-Jitsu: Mais que um Esporte</h2>
-      <p>O <strong>jiu-jitsu</strong> é uma arte marcial que se foca em técnicas de submissão e defesa. Além de ser uma excelente forma de defesa pessoal, o jiu-jitsu oferece benefícios como a melhora da flexibilidade, do equilíbrio e da força. Mentalmente, ele ensina a disciplina, o foco e o controle da ansiedade.</p>
+    <!-- Beach Tennis -->
+    <section id="beachtennis">
+      <h2>Beach Tennis</h2>
+      <p>
+        O <strong>beach tennis</strong> é um esporte dinâmico que mistura elementos do tênis tradicional com o frescobol, praticado em uma quadra de areia. É ideal para quem busca se exercitar de forma leve e divertida.
+        Jogar na areia exige mais força e equilíbrio, fortalecendo pernas, abdômen e resistência física. Além disso, o ambiente da praia proporciona contato com a natureza e bem-estar mental.
+      </p>
+      <img src="https://images.unsplash.com/photo-1622920742238-2e69d6b17c63?auto=format&fit=crop&w=1000&q=80" alt="Jogo de beach tennis na praia">
+    </section>
+
+    <!-- Jiu-Jitsu -->
+    <section id="jiujitsu">
+      <h2>Jiu-Jitsu</h2>
+      <p>
+        O <strong>jiu-jitsu</strong> é uma arte marcial que ensina técnicas de defesa pessoal e desenvolve o corpo e a mente. É conhecido como "a arte suave", pois se baseia na técnica e não na força bruta.
+        A prática regular melhora a flexibilidade, a coordenação e o equilíbrio. Mentalmente, o jiu-jitsu ensina disciplina, paciência e autocontrole — valores que se aplicam à vida cotidiana.
+      </p>
+      <img src="https://images.unsplash.com/photo-1609899954046-90b9f70a9f32?auto=format&fit=crop&w=1000&q=80" alt="Praticantes de jiu-jitsu treinando">
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Entre em contato</h2>
+      <p>
+        Quer saber mais sobre esses esportes ou começar a praticar?  
+        Envie uma mensagem ou procure uma academia perto de você!
+      </p>
+      <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome"><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="seuemail@email.com"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
+  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Esportes e Saúde - Todos os direitos reservados</p>
+    <p>&copy; 2025 Esportes e Saúde | Feito com 💪 energia e bem-estar</p>
   </footer>
+
 </body>
 </html>
